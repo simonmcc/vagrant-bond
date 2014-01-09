@@ -24,6 +24,6 @@ Vagrant.configure("2") do |config|
   config.vm.provider "virtualbox" do |v|
     v.gui = true
     # add another nic, eth1, which is a std nat interface
-    v.customize ["modifyvm", :id, "--nic1", "nat"]
+    v.customize ["modifyvm", :id, "--nic2", "nat"]
   end
 end
